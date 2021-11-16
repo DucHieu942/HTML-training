@@ -48,8 +48,8 @@ html{
 
 }
 .grid__column-2-4{
-    /* padding-left: 5px;
-    padding-right: 5px; */
+    padding-left: 5px;
+    padding-right: 5px;
     width: 20%;
     background-color: #FB9086;
     border-right: 1px solid #070707;
@@ -59,3 +59,13 @@ html{
    padding-right: 0px;
 
 } */
+/* Mobile responsive */
+@media(max-width:1023){
+
+    .category{
+        display: none;
+    }
+    /* .category__heading-icon{
+        display: block;
+    } */
+}
