@@ -151,6 +151,9 @@
   padding-top: 100%;
   background-size:contain;
   background-repeat: no-repeat;
+  background-color: #FB9086;
+  border: 1px solid #070707;
+  /* border-bottom: 1px solid #070707; */
 }
 
 .home-product-name{
