@@ -43,8 +43,8 @@
                     <i class="header__nabar-icon fas fa-question-circle"></i>
                     Trợ giúp</a>
                 </li>
-                <li class="header__navbar-item  header__navbar-item--strong header__navbar-item--separate">Đăng ký</li>
-                <li class="header__navbar-item  header__navbar-item--strong ">Đăng Nhập</li>
+                <li class="header__navbar-item  header__navbar-item--strong header__navbar-item--separate btnOpen-Register">Đăng ký</li>
+                <li class="header__navbar-item  header__navbar-item--strong btnOpen-Login">Đăng Nhập</li>
               </ul>
             </nav>
           <!-- <div class="logo" style="background-image: url(https://images.squarespace-cdn.com/content/v1/54ec921ae4b068927b1b81ed/1576551777579-7XUQMP74H1OI7VV5IQBS/logo_LowKey_2019_inline.png?format=1500w)"></div>
@@ -126,8 +126,8 @@
                   </div>
                   <div class="grid__column-2-4">
                     <!-- Product-item -->
-                    <div class="home-product-item" style="background-image: url(https://cdn-download.kiotviet.vn/kiotvietimages/giaychat180dongcac/e219127900634269b16e804f397d5742.jpg);">
-                     <h4 class="home-product-name">Vans Classic Sport Style 36 Cadmium Green</h4>
+                    <div class="home-product-item" style="background-image: url(https://cdn-download.kiotviet.vn/kiotvietimages/giaychat180dongcac/6ddba9398a11437d9de51cd40e57f055.jpg);">
+                     <h4 class="home-product-name">Vans Sk8 Pig Suede Heiq Eco Dry Chilli Pepper</h4>
                      <span class="home-product-item__price">1,499,000đ</span>
                      <div class="home-product-item__action">
                       <span class="home-product-item__buy">
@@ -226,8 +226,8 @@
                   </div>
                   <div class="grid__column-2-4">
                     <!-- Product-item -->
-                    <div class="home-product-item" style="background-image: url(https://cdn-download.kiotviet.vn/kiotvietimages/giaychat180dongcac/e219127900634269b16e804f397d5742.jpg);">
-                     <h4 class="home-product-name">Vans Classic Sport Style 36 Cadmium Green</h4>
+                    <div class="home-product-item" style="background-image: url(https://cdn-download.kiotviet.vn/kiotvietimages/giaychat180dongcac/6ddba9398a11437d9de51cd40e57f055.jpg);">
+                     <h4 class="home-product-name">Vans Sk8 Pig Suede Heiq Eco Dry Chilli Pepper</h4>
                      <span class="home-product-item__price">1,499,000đ</span>
                      <div class="home-product-item__action">
                       <span class="home-product-item__buy">
@@ -296,7 +296,72 @@
         </footer>
     
     </div>
- </body>
+
+    <div class="modal hide">
+      <div class="modal__overlay "></div>
+      <div class="modal__body ">
+        
+           <!-- Register form -->
+           <div class="auth-form modal__Register hide"> 
+             <div class="auth-form__container">
+             <div class="auth-form__header">
+               <h3 class="auth-formm__heading">Đăng ký</h3>
+               <span class="auth-form__switch-btn">Đăng nhập</span>
+             </div>
+
+               <div class="auth-form__form">
+                 <div class="auth-form_group">
+                   <input type="text" class="auth-form__input" placeholder="Email của bạn">
+                 </div>
+                 <div class="auth-form_group">
+                  <input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn">
+                 </div>
+                 <div class="auth-form_group">
+                  <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu">
+                 </div>
+
+               </div>
+
+               <div class="auth-form__controls">
+                 <button class="btn auth-form__control-back btn--normal">TRỞ LẠI</button>
+                 <button class="btn btn--primary">ĐĂNG KÝ</button>
+               </div>
+
+             </div>
+           </div>
+           <!-- Login form -->
+           <div class="auth-form modal__Login hide">
+                        <div class="auth-form__container">
+                        <div class="auth-form__header">
+                          <h3 class="auth-formm__heading">Đăng nhập</h3>
+                          <span class="auth-form__switch-btn">Đăng ký</span>
+                        </div>
+           
+                          <div class="auth-form__form">
+                            <div class="auth-form_group">
+                              <input type="text" class="auth-form__input" placeholder="Email của bạn">
+                            </div>
+                            <div class="auth-form_group">
+                             <input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn">
+                            </div>
+           
+                          </div>
+                       <div class="auth-form__aside">
+                         <div class="auth-form__help">
+                           <a href="" class="auth-form__help-link">Quên mật khẩu</a>
+                           <a href="" class="auth-form__help-link">Cần trợ giúp?</a>
+                         </div>
+                       </div>
+                          <div class="auth-form__controls">
+                            <button class="btn auth-form__control-back btn--normal">TRỞ LẠI</button>
+                            <button class="btn btn--primary">ĐĂNG NHẬP</button>
+                          </div>
+           
+                        </div>
+           </div>
+      </div>
+    </div>
   
- 
+ </body>
+ <script src="main.js"></script>
 </html> 

@@ -210,3 +210,40 @@
   left:40%;
   bottom: 10px;
 } */
+
+/* Button styyle */
+.btn {
+    min-width: 142px;
+    height: 36px;
+    border: none;
+    border-radius: 2px;
+    background-color:var(--white-color);
+    font-size: 1.5rem;
+    padding: 0;
+    cursor: pointer;
+}
+.btn.btn--normal:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+.btn.btn--primary{
+    color: var(--white-color);
+    background-color: #fe6433;
+}
+.auth-form__control-back{
+    margin-right: 8px;
+}
+
+.auth-form__help {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.auth-form__help-link {
+    margin-right: 8px;
+}
+.hide {
+    display: none;
+}
+.display {
+    display: flex;
+}
