@@ -408,3 +408,7 @@
     height: 30px;
     width: 40px;
 }
+.action-product:hover{
+    cursor: pointer;
+
+}
