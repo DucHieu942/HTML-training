@@ -356,10 +356,11 @@
 
 }
 .home-product-item__rating{
-    font-size: 0.5rem;
+    font-size: 1rem;
     color: rgba(255, 255, 255, 0.9);
     width:50%;
     height:8%;
+    text-align: right;
 }
 .star-gold{
     color: var(--star-gold-color);
