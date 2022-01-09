@@ -1,7 +1,10 @@
 .header {
+    position: fixed;
     width: 100%;
     height:120px;
-    background-image: linear-gradient(0, #fe6433, #f52e92)
+    background-image: linear-gradient(0, #fe6433, #f52e92);
+    top: 0;
+    z-index: 1;
 }
 
 .header__navbar{
@@ -82,13 +85,18 @@
 
 .app__container{
     background-color:#F5F5F5;
+    margin-top: 120px;
+    z-index: 1;
 }
 
+.category_list{
+    position: fixed;
+    width: 13%;
+}
 .category{
     background-color: var(--white-color);
     border-radius: 2px;
 }
-
 .category__heading{
     font-size: 1.7rem;
     color : var(--text-color);
@@ -109,6 +117,7 @@
  padding-left: 0;
  list-style: none;
  margin-bottom: 0;
+ margin-top:0;
 }
 
 .category-item--active.category-item_link{
@@ -213,7 +222,7 @@
     background-color:var(--white-color);
     border-radius: 5px;
     display: none;
-    z-index: 1;
+    /* z-index: 1; */
     
 }
 
