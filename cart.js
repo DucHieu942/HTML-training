@@ -1,17 +1,14 @@
-
 var productsApi = './TestData/DataProducts.json'
-
 /*ADD to BAG*/
 function addtobag(id) {
-  getProducts(function (products, id) {
+  getProducts(function (products, id ) {
     addProduct(products, idproduct);
   },productsApi);
   let idproduct = id;
   alert("Đã thêm sản phẩm vào giỏ hàng");
 }
-
 /* function */
-function getProducts(callback,url) {
+function getProducts(callback,url,id) {
   fetch(url)
     .then(function (response) {
       return response.json();

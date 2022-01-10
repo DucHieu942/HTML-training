@@ -74,6 +74,18 @@
       }
 
 
+  ],
+  "User_account": [
+    {
+      "id":1,
+      "account": "admin",
+      "password":"1234"
+    },
+    {
+      "id":2,
+      "account": "hieudhd942",
+      "password":"942"
+    }
   ]
 
 }
