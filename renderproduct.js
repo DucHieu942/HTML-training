@@ -1,5 +1,7 @@
 
-var productsApi = 'http://localhost:3000/products'
+// var productsApi = 'http://localhost:3000/products'
+
+var productsApi = './TestData/DataProducts.json'
 
 function start() {
      getProducts(renderProducts);
@@ -15,6 +17,9 @@ function getProducts(callback) {
      })
      .then(callback);
 }
+
+
+
 
 function renderProducts(products) {
     var listProductsBlock = 

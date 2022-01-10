@@ -1,0 +1,79 @@
+{
+  "products":[
+      {
+      "id": 1,
+      "img": "https://cdn-download.kiotviet.vn/kiotvietimages/giaychat180dongcac/9f57c89ebc4b44ee99bb839e563c6213.jpg",
+      "name":"Vans Old Skool Pewter / Black",
+      "price":"1,299,000đ"
+      },
+      {
+        "id": 2,
+        "img": "https://scontent.fhph1-3.fna.fbcdn.net/v/t39.30808-6/270829803_118456257358213_1753543584150244826_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=730e14&_nc_ohc=2dn_ZG_giysAX9Xyl_m&_nc_ht=scontent.fhph1-3.fna&oh=00_AT8mf_HxM6N5AwfWTvEfCozPxJJcKGXsevCi7mH258yVRA&oe=61DC223C",
+        "name":"Jordan 4 Blue",
+        "price":"2,399,000đ"
+      },
+      {
+        "id": 3,
+        "img": "https://i.pinimg.com/564x/74/76/ff/7476ff6ca7c1627887a81e3b1fc1b1e6.jpg",
+        "name":"Jordan 4 Bull",
+        "price":"2,999,000đ"
+      },
+      {
+        "id": 4,
+        "img": "https://i.pinimg.com/564x/f4/61/41/f46141b49bbb516434d7e95f746abe47.jpg",
+        "name":"Jordan 4 Gray-Black",
+        "price":"3,299,000đ"
+      },
+      {
+        "id": 5,
+        "img": "https://i.pinimg.com/564x/1c/2e/0b/1c2e0bd2bcbcbcc8be46f7fb131ef203.jpg",
+        "name":"Jordan 4 White",
+        "price":"1,299,000đ"
+      },
+      {
+        "id": 6,
+        "img": "https://i.pinimg.com/564x/bd/bb/aa/bdbbaa876248937b5e011cf3400ca3f1.jpg",
+        "name":"Jordan 4 White-Red",
+        "price":"1,699,000đ"
+      },
+      {
+        "id": 7,
+        "img": "https://cdn-download.kiotviet.vn/kiotvietimages/giaychat180dongcac/7e08bc4c0aaa47cba27f2eb2d888c01e.jpg",
+        "name":"Vans Old Skool Garden Floral Black/True White",
+        "price":"1,699,000đ"
+      },
+      {
+          "id": 8,
+          "img": "https://images.vans.com/is/image/VansEU/VN000D3HY28-HERO?$PDP-FULL-IMAGE$",
+          "name":"Vans Old Skool",
+          "price":"1,089,000đ"
+      },
+      {
+        "id": 9,
+        "img": "https://cdn-images.kiotviet.vn/giaychat180dongcac/57172a6652874a2cb2a98b7ca488e1eb.jpg",
+        "name":"Champion Hyper C Sneaker",
+        "price":"3,299,000đ"
+      },
+      {
+        "id": 10,
+        "img": "https://cdn-download.kiotviet.vn/kiotvietimages/giaychat180dongcac/6ddba9398a11437d9de51cd40e57f055.jpg",
+        "name":"Vans Classic Sport Style 36 Cadmium Yellow",
+        "price":"799,000đ"
+      },
+      {
+        "id": 11,
+        "img": "https://i.pinimg.com/564x/4b/f8/e4/4bf8e491797688726ab808d124a61147.jpg",
+        "name":"Nike Jordan 1 Low Blue",
+        "price":"1,299,000đ"
+      },
+      {
+        "id": 12,
+        "img": "https://i.pinimg.com/564x/f6/10/dc/f610dc88232c6d4941c9b2cc6cb0910f.jpg",
+        "name":"Nike Jordan 1 Black-Red",
+        "price":"1,299,000đ"
+      }
+
+
+  ]
+
+}
