@@ -1,3 +1,4 @@
+"use strict";
 var productsApi = "./TestData/DataProducts.json";
 
 function start() {
@@ -18,10 +19,10 @@ function getProducts(callback) {
 function renderProducts(products) {
   var listProductsBlock = document.querySelector(".products-list");
 
-  var htmls = products.map(function (product) {
+  var htmls = products.products.map(function (product) {
     return `
                 <div class="grid__column-2-4">
-                
+
                     <div class="home-product-item" >
                      <div class="home-product-item__image">
                       <img src="${product.img}" width="190" height="190" alt="">
@@ -41,9 +42,9 @@ function renderProducts(products) {
                       </div>
                      </div>
                     </div>
-        
+
                   </div>
-                  
+
         `;
   });
   listProductsBlock.innerHTML = htmls.join("");
