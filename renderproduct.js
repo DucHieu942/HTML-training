@@ -1,27 +1,25 @@
-
-var productsApi = 'http://localhost:3000/products'
+var productsApi = "http://localhost:3000/products";
 
 function start() {
-     getProducts(renderProducts);
-
+  getProducts(renderProducts);
 }
 
 start();
-/* function */ 
+
+/* function */
 function getProducts(callback) {
-    fetch(productsApi)
-     .then(function (response) {
-         return response.json();
-     })
-     .then(callback);
+  fetch(productsApi)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(callback);
 }
 
 function renderProducts(products) {
-    var listProductsBlock = 
-     document.querySelector('.products-list');
+  var listProductsBlock = document.querySelector(".products-list");
 
-    var htmls = products.map(function(product){
-        return `
+  var htmls = products.map(function (product) {
+    return `
                 <div class="grid__column-2-4">
                 
                     <div class="home-product-item" >
@@ -47,6 +45,6 @@ function renderProducts(products) {
                   </div>
                   
         `;
-    });
-    listProductsBlock.innerHTML = htmls.join('');
+  });
+  listProductsBlock.innerHTML = htmls.join("");
 }
