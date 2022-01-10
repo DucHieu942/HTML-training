@@ -1,5 +1,4 @@
-{
-  "products":[
+[
       {
       "id": 1,
       "img": "https://cdn-download.kiotviet.vn/kiotvietimages/giaychat180dongcac/9f57c89ebc4b44ee99bb839e563c6213.jpg",
@@ -72,20 +71,4 @@
         "name":"Nike Jordan 1 Black-Red",
         "price":"1,299,000đ"
       }
-
-
-  ],
-  "User_account": [
-    {
-      "id":1,
-      "account": "admin",
-      "password":"1234"
-    },
-    {
-      "id":2,
-      "account": "hieudhd942",
-      "password":"942"
-    }
-  ]
-
-}
+]
