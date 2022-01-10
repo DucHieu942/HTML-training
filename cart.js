@@ -1,10 +1,10 @@
 var productsApi = "http://localhost:3000/products";
 /*ADD to BAG*/
-function addtobag(id) {
-  getProducts(function (products, id = idproduct) {
-    addProduct(products, (id = idproduct));
+function addToBag(id) {
+  getProducts(function (products, id = idProduct) {
+    addProduct(products, (id = idProduct));
   });
-  let idproduct = id;
+  let idProduct = id;
   alert("Đã thêm sản phẩm vào giỏ hàng");
 }
 /* function */
@@ -45,35 +45,41 @@ function addProduct(products, id) {
 
 function renderListProducts() {
   var listProductsBlock = document.querySelector(".header__cart-list");
-  var htmls = cartProducts.map(function (cartProduct) {
+  var html = cartProducts.map(function (cartProduct) {
     return `
-    <table style="width:100%">
-    <tr>
-    <th>Sản phẩm</th>
-    <th>Tên sản Phẩm</th>
-    <th>Giá tiền</th>
-    <th>Số Lượng</th>
-    <th>Xóa</th>
-  </tr>
-    <tr>
-      <td><div class="itemProduct_img">
-        <img src="${cartProduct[0].img}" width="30" height="30" alt="">
-     </div></td>
-      <td><h4 class="itemProduct_name" >${cartProduct[0].name}</h4></td>
-      <td><div><span class="=itemProduct_price">${cartProduct[0].price}</span></div></td>
-      <td>
-      <div class="itemProduct_cout">${cartProduct[0].count}</div>
-      </td>
-      <td>
-      <button class="action-product" onclick="deleteProduct(${cartProduct[0].id})" >
-      <i class="far fa-trash-alt"></i>
-      </button>
-      </td>
-    </tr>
-</table>
-       `;
+      <table style="width:100%">
+        <tr>
+          <th>Sản phẩm</th>
+          <th>Tên sản Phẩm</th>
+          <th>Giá tiền</th>
+          <th>Số Lượng</th>
+          <th>Xóa</th>
+        </tr>
+        <tr>
+          <td>
+            <div class="itemProduct_img">
+              <img src="${cartProduct[0].img}" width="30" height="30" alt="">
+            </div>
+          </td>
+          <td>
+            <div>
+              <span class="=itemProduct_price">${cartProduct[0].price}</span>
+            </div>
+          </td>
+          <td><h4 class="itemProduct_name" >${cartProduct[0].name}</h4></td>
+          <td>
+            <div class="itemProduct_cout">${cartProduct[0].count}</div>
+          </td>
+          <td>
+            <button class="action-product" onclick="deleteProduct(${cartProduct[0].id})">
+              <i class="far fa-trash-alt"></i>
+            </button>
+          </td>
+        </tr>
+      </table>
+      `;
   });
-  listProductsBlock.innerHTML = htmls.join("");
+  listProductsBlock.innerHTML = html.join("");
 }
 
 function deleteProduct(id) {
