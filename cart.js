@@ -1,30 +1,34 @@
-var productsApi = "http://localhost:3000/products";
+
+var productsApi = './TestData/DataProducts.json'
+
 /*ADD to BAG*/
 function addtobag(id) {
-  getProducts(function (products, id = idproduct) {
-    addProduct(products, (id = idproduct));
-  });
+  getProducts(function (products, id) {
+    addProduct(products, idproduct);
+  },productsApi);
   let idproduct = id;
   alert("Đã thêm sản phẩm vào giỏ hàng");
 }
+
 /* function */
-function getProducts(callback) {
-  fetch(productsApi)
+function getProducts(callback,url) {
+  fetch(url)
     .then(function (response) {
       return response.json();
     })
     .then(callback);
 }
 
+
 var cartProducts = new Array();
 var checkoutProduct = false;
 function addProduct(products, id) {
   // console.log(id);
-  var itemProduct = products.filter(function (product) {
+  var itemProduct = products.products.filter(function (product) {
     return product.id === id;
   });
   for (var i = 0; i < cartProducts.length; i++) {
-    console.log(cartProducts[i][0].id);
+    // console.log(cartProducts[i][0].id);
     if (cartProducts[i][0].id == id) {
       cartProducts[i][0].count += 1;
       checkoutProduct = true;

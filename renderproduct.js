@@ -1,21 +1,17 @@
-<<<<<<< HEAD
 
-// var productsApi = 'http://localhost:3000/products'
+var productsApi = "./TestData/DataProducts.json"
 
-var productsApi = './TestData/DataProducts.json'
-=======
-var productsApi = "http://localhost:3000/products";
->>>>>>> 4cf47aec59009bbc3e460b89ce69c2febce5d704
 
 function start() {
-  getProducts(renderProducts);
+  getProducts(renderProducts,productsApi);
+
 }
 
 start();
 
 /* function */
-function getProducts(callback) {
-  fetch(productsApi)
+function getProducts(callback,url) {
+  fetch(url)
     .then(function (response) {
       return response.json();
     })
@@ -27,8 +23,7 @@ function getProducts(callback) {
 
 function renderProducts(products) {
   var listProductsBlock = document.querySelector(".products-list");
-
-  var htmls = products.map(function (product) {
+  var htmls = products.products.map(function (product) {
     return `
                 <div class="grid__column-2-4">
                 
